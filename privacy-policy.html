@@ -1,4 +1,5 @@
 <!doctype html>
+
 <html lang="en">
 <head>
   <meta charset="utf-8">
@@ -15,74 +16,77 @@
       --line: rgba(0, 0, 0, 0.10);
     }
 
-    @media (prefers-color-scheme: dark) {
-      :root {
-        --text: #f3f1ed;
-        --muted: #aaa49c;
-        --bg: #171512;
-        --card: #211f1b;
-        --line: rgba(255, 255, 255, 0.14);
-      }
-    }
+```
+@media (prefers-color-scheme: dark) {
+  :root {
+    --text: #f3f1ed;
+    --muted: #aaa49c;
+    --bg: #171512;
+    --card: #211f1b;
+    --line: rgba(255, 255, 255, 0.14);
+  }
+}
 
-    body {
-      margin: 0;
-      font: 16px/1.55 -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-      color: var(--text);
-      background: var(--bg);
-    }
+body {
+  margin: 0;
+  font: 16px/1.55 -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  color: var(--text);
+  background: var(--bg);
+}
 
-    main {
-      max-width: 760px;
-      margin: 0 auto;
-      padding: 48px 20px 64px;
-    }
+main {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 48px 20px 64px;
+}
 
-    h1, h2 {
-      line-height: 1.15;
-      margin: 0 0 14px;
-    }
+h1, h2 {
+  line-height: 1.15;
+  margin: 0 0 14px;
+}
 
-    h1 {
-      font-size: clamp(32px, 6vw, 48px);
-      letter-spacing: -0.02em;
-    }
+h1 {
+  font-size: clamp(32px, 6vw, 48px);
+  letter-spacing: -0.02em;
+}
 
-    h2 {
-      font-size: 22px;
-      margin-top: 32px;
-    }
+h2 {
+  font-size: 22px;
+  margin-top: 32px;
+}
 
-    p, ul {
-      margin: 0 0 14px;
-    }
+p, ul {
+  margin: 0 0 14px;
+}
 
-    ul {
-      padding-left: 22px;
-    }
+ul {
+  padding-left: 22px;
+}
 
-    a {
-      color: var(--accent);
-      font-weight: 600;
-    }
+a {
+  color: var(--accent);
+  font-weight: 600;
+}
 
-    .card {
-      background: var(--card);
-      border: 1px solid var(--line);
-      border-radius: 16px;
-      padding: 18px;
-      margin: 20px 0;
-    }
+.card {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  padding: 18px;
+  margin: 20px 0;
+}
 
-    .muted {
-      color: var(--muted);
-    }
+.muted {
+  color: var(--muted);
+}
 
-    .language {
-      border-top: 1px solid var(--line);
-      margin-top: 42px;
-      padding-top: 34px;
-    }
+.language {
+  border-top: 1px solid var(--line);
+  margin-top: 42px;
+  padding-top: 34px;
+}
+```
+
   </style>
 </head>
 <body>
@@ -90,79 +94,125 @@
     <h1>DutchDeck Privacy Policy</h1>
     <p class="muted">Effective date: June 14, 2026</p>
 
-    <div class="card">
-      <p><strong>Summary:</strong> DutchDeck is a Dutch vocabulary learning app. The app stores your learning settings and progress locally on your device. DutchDeck does not require an account and does not sell personal data.</p>
-    </div>
+```
+<div class="card">
+  <p><strong>Summary:</strong> DutchDeck is a Dutch vocabulary learning app. The app stores your learning settings and progress locally on your device. DutchDeck does not require an account, does not sell personal data, and does not use analytics data for advertising or cross-app tracking.</p>
+</div>
 
-    <h2>Information DutchDeck stores on your device</h2>
-    <p>DutchDeck stores learning data locally so the app can remember your progress and settings. This may include:</p>
-    <ul>
-      <li>selected interface and hint languages;</li>
-      <li>selected learning level and daily deck size;</li>
-      <li>word progress, answer history, review dates, streaks, milestones, and daily deck state;</li>
-      <li>daily reminder settings, if you enable reminders.</li>
-    </ul>
-    <p>This data is used to run the app's learning features. It is not used to identify you personally.</p>
+<h2>Information DutchDeck stores on your device</h2>
+<p>DutchDeck stores learning data locally so the app can remember your progress and settings. This may include:</p>
+<ul>
+  <li>selected interface and hint languages;</li>
+  <li>selected learning level and daily deck size;</li>
+  <li>word progress, answer history, review dates, streaks, milestones, and daily deck state;</li>
+  <li>daily reminder settings, if you enable reminders;</li>
+  <li>purchase entitlement state, so Plus features can be unlocked when available.</li>
+</ul>
+<p>This data is used to run the app's learning features. DutchDeck does not require a user account and does not use this local learning data to identify you personally.</p>
 
-    <h2>Notifications</h2>
-    <p>If you enable daily reminders, DutchDeck uses local notifications on your device. These reminders are scheduled locally through iOS. DutchDeck does not use push notifications, APNs, or a server to send daily reminders.</p>
+<h2>Analytics</h2>
+<p>DutchDeck uses Firebase Analytics to understand how people use the app and to improve the product. Analytics events may include app launch, onboarding progress, language selection, placement test completion, daily deck start and completion, card answer outcome, dictionary usage, milestone actions, paywall views, purchase flow events, and restore flow events.</p>
+<p>Analytics events may include limited technical or product parameters, such as interface language, selected level, deck size, task type, answer outcome, filter type, milestone type, product identifier, restore result, or error reason.</p>
 
-    <h2>Purchases</h2>
-    <p>DutchDeck Plus purchases and restores are handled by Apple's StoreKit. DutchDeck receives purchase entitlement information from Apple so it can unlock Plus features. Payment details are handled by Apple and are not collected by DutchDeck.</p>
+<h2>What DutchDeck does not send to analytics</h2>
+<p>DutchDeck is designed not to send the following information to Firebase Analytics:</p>
+<ul>
+  <li>the text you type as an answer;</li>
+  <li>the correct answer text;</li>
+  <li>Dutch vocabulary words or word identifiers;</li>
+  <li>free-form notes or personal text;</li>
+  <li>your name, email address, phone number, or account identifier.</li>
+</ul>
 
-    <h2>Analytics</h2>
-    <p>DutchDeck may use Firebase Analytics when Firebase is configured in the app build. Analytics events help understand app usage and improve the product, such as onboarding completion, daily deck starts, answered cards, dictionary usage, and purchase flow events. These events are designed to avoid collecting the words you type as free-form personal content.</p>
+<h2>Identifiers and tracking</h2>
+<p>Firebase Analytics may use app instance identifiers and device-related identifiers to measure app usage and basic product analytics. DutchDeck does not use App Tracking Transparency, does not access IDFA, and does not use analytics data for advertising, remarketing, data broker sharing, or cross-app tracking.</p>
+<p>DutchDeck does not link analytics events to a DutchDeck account because the app does not require an account.</p>
 
-    <h2>Third-party services</h2>
-    <p>DutchDeck may use Apple services, including StoreKit and local notification APIs. If analytics is enabled, DutchDeck may use Firebase Analytics. These services process data according to their own privacy policies.</p>
+<h2>Notifications</h2>
+<p>If you enable daily reminders, DutchDeck uses local notifications on your device. These reminders are scheduled locally through iOS. DutchDeck does not use push notifications, APNs, or a server to send daily reminders.</p>
 
-    <h2>Data sharing and sale</h2>
-    <p>DutchDeck does not sell your personal data. DutchDeck does not require a user account and does not intentionally collect names, email addresses, or contact details inside the app.</p>
+<h2>Purchases</h2>
+<p>DutchDeck Plus purchases and restores are handled by Apple's StoreKit. DutchDeck receives purchase entitlement information from Apple so it can unlock Plus features. Payment details are handled by Apple and are not collected by DutchDeck.</p>
+<p>DutchDeck may log purchase flow events, such as paywall views, purchase started, purchase completed, purchase failed, restore started, or restore completed. These events are used to understand whether the purchase flow works correctly and to improve the app experience.</p>
 
-    <h2>Children's privacy</h2>
-    <p>DutchDeck is intended for general language learning and is not directed to children under 13. If you believe a child has provided personal information through the app, contact us so we can review the request.</p>
+<h2>Third-party services</h2>
+<p>DutchDeck uses Apple services such as StoreKit and local notification APIs. DutchDeck also uses Firebase Analytics for product analytics. These services process data according to their own privacy policies and platform rules.</p>
 
-    <h2>Changes to this policy</h2>
-    <p>This Privacy Policy may be updated when DutchDeck changes its features, data practices, or legal requirements. The effective date above will be updated when changes are made.</p>
+<h2>Data sharing and sale</h2>
+<p>DutchDeck does not sell your personal data. DutchDeck does not require a user account and does not intentionally collect names, email addresses, or contact details inside the app.</p>
+<p>DutchDeck does not share analytics data for advertising, remarketing, or cross-app tracking.</p>
 
-    <h2>Contact</h2>
-    <p>TODO before publication: add the final support/contact email for privacy questions.</p>
+<h2>Children's privacy</h2>
+<p>DutchDeck is intended for general language learning and is not directed to children under 13. If you believe a child has provided personal information through the app, contact us so we can review the request.</p>
 
-    <section class="language" lang="ru">
-      <h1>Политика конфиденциальности DutchDeck</h1>
-      <p class="muted">Дата вступления в силу: 14 июня 2026 г.</p>
+<h2>Changes to this policy</h2>
+<p>This Privacy Policy may be updated when DutchDeck changes its features, data practices, or legal requirements. The effective date above will be updated when changes are made.</p>
 
-      <div class="card">
-        <p><strong>Кратко:</strong> DutchDeck — приложение для изучения нидерландской лексики. Настройки и прогресс обучения хранятся локально на устройстве. DutchDeck не требует аккаунта и не продает персональные данные.</p>
-      </div>
+<h2>Contact</h2>
+<p>For privacy questions, contact us at <a href="mailto:muliukov@gmail.com">muliukov@gmail.com</a>.</p>
 
-      <h2>Данные, которые DutchDeck хранит на устройстве</h2>
-      <p>DutchDeck хранит локальные данные, чтобы запоминать прогресс и настройки. Это может включать:</p>
-      <ul>
-        <li>выбранный язык интерфейса и язык подсказок;</li>
-        <li>выбранный уровень и размер дневной колоды;</li>
-        <li>прогресс по словам, историю ответов, даты повторения, серии, достижения и состояние дневной колоды;</li>
-        <li>настройки ежедневных напоминаний, если они включены.</li>
-      </ul>
+<section class="language" lang="ru">
+  <h1>Политика конфиденциальности DutchDeck</h1>
+  <p class="muted">Дата вступления в силу: 14 июня 2026 г.</p>
 
-      <h2>Уведомления</h2>
-      <p>Если вы включаете ежедневные напоминания, DutchDeck использует локальные уведомления iOS. Они планируются на устройстве. DutchDeck не использует push-уведомления, APNs или сервер для ежедневных напоминаний.</p>
+  <div class="card">
+    <p><strong>Кратко:</strong> DutchDeck — приложение для изучения нидерландской лексики. Настройки и прогресс обучения хранятся локально на устройстве. DutchDeck не требует аккаунта, не продает персональные данные и не использует аналитику для рекламы или межсервисного отслеживания.</p>
+  </div>
 
-      <h2>Покупки</h2>
-      <p>Покупки DutchDeck Plus и восстановление покупок обрабатываются Apple StoreKit. DutchDeck получает от Apple информацию о наличии доступа Plus, чтобы открыть платные функции. Платежные данные обрабатываются Apple и не собираются DutchDeck.</p>
+  <h2>Данные, которые DutchDeck хранит на устройстве</h2>
+  <p>DutchDeck хранит учебные данные локально, чтобы запоминать прогресс и настройки. Это может включать:</p>
+  <ul>
+    <li>выбранный язык интерфейса и язык подсказок;</li>
+    <li>выбранный уровень и размер дневной колоды;</li>
+    <li>прогресс по словам, историю ответов, даты повторения, серии, достижения и состояние дневной колоды;</li>
+    <li>настройки ежедневных напоминаний, если они включены;</li>
+    <li>состояние доступа к покупке, чтобы открывать функции Plus, если они доступны.</li>
+  </ul>
+  <p>Эти данные используются для работы учебных функций приложения. DutchDeck не требует аккаунта и не использует локальные учебные данные для вашей личной идентификации.</p>
 
-      <h2>Аналитика</h2>
-      <p>DutchDeck может использовать Firebase Analytics, если Firebase настроен в сборке приложения. События аналитики помогают понимать использование приложения и улучшать продукт: например, прохождение онбординга, запуск дневной колоды, ответы на карточки, использование словаря и события покупки. Эти события не предназначены для сбора введенного вами свободного текста как персонального содержимого.</p>
+  <h2>Аналитика</h2>
+  <p>DutchDeck использует Firebase Analytics, чтобы понимать, как люди пользуются приложением, и улучшать продукт. События аналитики могут включать запуск приложения, прохождение онбординга, выбор языка, завершение теста уровня, запуск и завершение дневной колоды, результат ответа на карточку, использование словаря, действия с достижениями, открытие paywall, события покупки и восстановления покупки.</p>
+  <p>События аналитики могут включать ограниченные технические или продуктовые параметры, например язык интерфейса, выбранный уровень, размер колоды, тип задания, результат ответа, тип фильтра, тип достижения, идентификатор продукта, результат восстановления покупки или причину ошибки.</p>
 
-      <h2>Передача и продажа данных</h2>
-      <p>DutchDeck не продает персональные данные. Приложение не требует аккаунта и не собирает намеренно имя, email или контактные данные внутри приложения.</p>
+  <h2>Что DutchDeck не отправляет в аналитику</h2>
+  <p>DutchDeck спроектирован так, чтобы не отправлять в Firebase Analytics следующие данные:</p>
+  <ul>
+    <li>текст, который вы вводите как ответ;</li>
+    <li>текст правильного ответа;</li>
+    <li>нидерландские слова или идентификаторы слов;</li>
+    <li>свободный текст или персональные заметки;</li>
+    <li>ваше имя, email, телефон или идентификатор аккаунта.</li>
+  </ul>
 
-      <h2>Изменения политики</h2>
-      <p>Эта политика может обновляться при изменении функций DutchDeck, практик обработки данных или юридических требований.</p>
+  <h2>Идентификаторы и отслеживание</h2>
+  <p>Firebase Analytics может использовать идентификаторы экземпляра приложения и связанные с устройством идентификаторы для измерения использования приложения и базовой продуктовой аналитики. DutchDeck не использует App Tracking Transparency, не получает доступ к IDFA и не использует аналитические данные для рекламы, ремаркетинга, передачи data brokers или межсервисного отслеживания.</p>
+  <p>DutchDeck не связывает события аналитики с аккаунтом DutchDeck, потому что приложение не требует аккаунта.</p>
 
-      <h2>Контакты</h2>
-      <p>TODO перед публикацией: добавить финальный email для вопросов о конфиденциальности.</p>
-    </section>
+  <h2>Уведомления</h2>
+  <p>Если вы включаете ежедневные напоминания, DutchDeck использует локальные уведомления на устройстве. Они планируются локально через iOS. DutchDeck не использует push-уведомления, APNs или сервер для ежедневных напоминаний.</p>
+
+  <h2>Покупки</h2>
+  <p>Покупки DutchDeck Plus и восстановление покупок обрабатываются Apple StoreKit. DutchDeck получает от Apple информацию о наличии доступа Plus, чтобы открыть платные функции. Платежные данные обрабатываются Apple и не собираются DutchDeck.</p>
+  <p>DutchDeck может логировать события процесса покупки, например открытие paywall, начало покупки, успешную покупку, ошибку покупки, начало восстановления покупки или завершение восстановления покупки. Эти события используются, чтобы понимать, работает ли процесс покупки корректно, и улучшать приложение.</p>
+
+  <h2>Сторонние сервисы</h2>
+  <p>DutchDeck использует сервисы Apple, включая StoreKit и локальные уведомления iOS. DutchDeck также использует Firebase Analytics для продуктовой аналитики. Эти сервисы обрабатывают данные согласно собственным политикам конфиденциальности и правилам платформ.</p>
+
+  <h2>Передача и продажа данных</h2>
+  <p>DutchDeck не продает персональные данные. Приложение не требует аккаунта и не собирает намеренно имя, email или контактные данные внутри приложения.</p>
+  <p>DutchDeck не передает аналитические данные для рекламы, ремаркетинга или межсервисного отслеживания.</p>
+
+  <h2>Конфиденциальность детей</h2>
+  <p>DutchDeck предназначен для общего изучения языка и не ориентирован на детей младше 13 лет. Если вы считаете, что ребенок передал персональные данные через приложение, свяжитесь с нами, чтобы мы могли рассмотреть запрос.</p>
+
+  <h2>Изменения политики</h2>
+  <p>Эта политика может обновляться при изменении функций DutchDeck, практик обработки данных или юридических требований. При изменениях будет обновлена дата вступления в силу.</p>
+
+  <h2>Контакты</h2>
+  <p>По вопросам конфиденциальности пишите на <a href="mailto:muliukov@gmail.com">muliukov@gmail.com</a>.</p>
+</section>
+```
+
   </main>
 </body>
 </html>
